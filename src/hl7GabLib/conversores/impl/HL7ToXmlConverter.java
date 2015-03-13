@@ -11,6 +11,10 @@ import ca.uhn.hl7v2.parser.XMLParser;
 
 public class HL7ToXmlConverter implements ConversorInterface{
 
+	protected HL7ToXmlConverter() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	@Override
 	public String execute(String input) throws ConversorException {
 		String retorno ="";
