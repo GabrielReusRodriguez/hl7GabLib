@@ -11,8 +11,7 @@ import ca.uhn.hl7v2.parser.XMLParser;
 
 public class XMLToHL7Converter implements ConversorInterface {
 
-	public XMLToHL7Converter() {
-		// TODO Auto-generated constructor stub
+	protected XMLToHL7Converter() {
 	}
 
 	@Override

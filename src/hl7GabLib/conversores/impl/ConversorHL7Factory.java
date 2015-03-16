@@ -7,7 +7,6 @@ import hl7GabLib.conversores.interfaces.ConversorInterface;
 public class ConversorHL7Factory implements ConversorFactoryInterface {
 
 	private ConversorHL7Factory() {
-		// TODO Auto-generated constructor stub
 
 	}
 

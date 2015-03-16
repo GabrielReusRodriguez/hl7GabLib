@@ -10,8 +10,7 @@ public class NoneConverter implements ConversorInterface {
 
 	@Override
 	public String execute(String msg) throws ConversorException {
-		// TODO Auto-generated method stub
-		return null;
+		return "";
 	}
 
 }
