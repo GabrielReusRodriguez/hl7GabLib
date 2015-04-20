@@ -1,28 +1,22 @@
 package hl7GabLib.conversores.impl;
 
 import hl7GabLib.conversores.TiposConversion;
-import hl7GabLib.conversores.interfaces.ConversorFactoryInterface;
 import hl7GabLib.conversores.interfaces.ConversorInterface;
 
-public class ConversorHL7Factory implements ConversorFactoryInterface {
-
-	private ConversorHL7Factory() {
-
-	}
-
-	@Override
-	public ConversorInterface newInstance(TiposConversion type) {
+public abstract class ConversorHL7Factory {
+	
+	public static ConversorInterface newInstance(TiposConversion type) {
 		
 		ConversorInterface conversor = null;
-		if (type != null) {
+		if (type == null) {
 			type = TiposConversion.NONE;
 		}
 
 		switch (type) {
-		case HL7TOXML:
+		case HL7_TO_XML:
 			conversor = new HL7ToXmlConverter();
 			break;
-		case XMLTOHL7:
+		case XML_TO_HL7:
 			conversor = new XMLToHL7Converter();
 			break;
 		case NONE:
