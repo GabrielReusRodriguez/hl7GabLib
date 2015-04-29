@@ -10,7 +10,7 @@ public class NoneConverter implements ConversorInterface {
 
 	@Override
 	public String execute(String msg) throws ConversorException {
-		return "";
+		throw new ConversorException("Conversor no soportado.");
 	}
 
 }

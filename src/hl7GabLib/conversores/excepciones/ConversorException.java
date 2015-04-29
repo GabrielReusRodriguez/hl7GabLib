@@ -25,10 +25,21 @@ public class ConversorException extends Exception{
 		// TODO Auto-generated constructor stub
 	}
 	
-	public ConversorException(String m,Exception e){
+	public ConversorException(Exception e){
 		this.message=e.getMessage();
 		this.exception=e;
-		
 	}
+	
+	public ConversorException(String m){
+		Exception e = new Exception(m);
+		this.message=e.getMessage();
+		this.exception=e;
+	}
+	
+	public ConversorException(String m,Exception e){
+		this.message=m;
+		this.exception=e;
+	}
+
 
 }
